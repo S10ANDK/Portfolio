@@ -1,0 +1,87 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    background-color: #8FA8A0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #F5EFE9;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+
+.header_title {
+    flex: 1;
+    margin: auto;
+    color: #F5F5F5;
+    font-family: Futura PT, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.9rem;
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    font-size: 1.1rem;
+}
+
+main,
+footer {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.7rem;
+    font-family: Dico Mono Slab Bold, sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-top: 50px;
+}
+
+.card-container {
+    margin: 50px auto;
+}
+
+.card {
+    background-color: #F5F5F5;
+    width: 100%;
+    max-width: 300px;
+    padding: 50px 20px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.card_images {
+   width: 100%;
+   max-width: 250px; 
+}
+
+#csm_image {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+h2,
+p {
+    text-align: left;
+    max-width: 250px;
+    margin: auto;
+}
+
+h2 {
+    font-family: Futura PT, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: #DCE2F5;
+    height: 200px;
+    /* position: fixed;
+    bottom: 0; */
+    width: 100%;
+    margin: auto;
+}
