@@ -22,8 +22,9 @@ header {
     color: #F5F5F5;
     font-family: Futura PT, Helvetica, sans-serif;
     font-weight: 500;
-    font-size: 1.9rem;
+    font-size: 2rem;
     text-decoration: none;
+    text-align: center;
     color: black;
 }
 
@@ -36,30 +37,61 @@ footer {
     text-align: center;
 }
 
+main {
+    max-width: 1400px;
+    background-color: #8FA8A0;
+    margin: auto;
+}
+
 h1 {
-    font-size: 1.7rem;
-    font-family: Dico Mono Slab Bold, sans-serif;
-    font-weight: 500;
-    color: #FFFFFF;
-    margin-top: 50px;
+    font-size: 1.5rem;
+    font-weight: 00;
+    max-width: 320px;
+    color: #000000;
+    background-color: #DCE2F5;
+    padding: 10px;
+    margin: 40px auto 0px;
 }
 
 .card-container {
-    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
 }
 
 .card {
+    flex: 1;
     background-color: #F5F5F5;
     width: 100%;
-    max-width: 300px;
-    padding: 50px 20px;
+    max-width: 280px;
+    height: 460px;
+    padding: 50px 20px 60px;
     border-radius: 5px;
-    margin: auto;
+    margin: 20px auto;
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    background-color: #F5EFE9;
+}
+
+.card-link:hover {
+    cursor: pointer;
 }
 
 .card_images {
    width: 100%;
    max-width: 250px; 
+}
+
+.card-icon {
+    max-width: 30px;
+    margin-right: 20px;
+    transform: translateY(7px);
+}
+
+.browser {
+    transform: translateY(8px);
 }
 
 #csm_image {
@@ -75,13 +107,113 @@ p {
 
 h2 {
     font-family: Futura PT, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+p {
+    line-height: 25px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+a {
+    display: block;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #000000;
+    margin: 25px 15px 0px;
+    text-decoration: none;
+}
+
+.card-link {
+   margin-top: 0px; 
+}
+
+.links:hover,
+.footer-link:hover {
+    text-decoration: underline;
 }
 
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #DCE2F5;
     height: 200px;
-    /* position: fixed;
-    bottom: 0; */
     width: 100%;
     margin: auto;
+}
+
+.footer-link {
+    text-align: center;
+    margin: 0px auto;
+    transform: translateY(-10px);
+}
+
+.linkedin_logo {
+    max-width: 50px;
+    transform: translateY(14px);
+    margin-right: 10px;
+}
+
+.footer-link:hover {
+
+}
+
+@media (min-width: 400px) {
+    .card {
+    max-width: 300px;
+   } 
+
+   a {
+    margin-left: 25px;
+   }
+}
+
+@media (min-width: 1200px) {
+    header {
+        height: 200px;
+    }
+
+    .header_title {
+        font-size: 4rem;
+    }
+
+    span {
+        font-size: 1.8rem;
+    }
+
+    main{
+        padding-bottom: 20vh;
+    } 
+
+    h1 {
+        font-size: 1.9rem;
+        margin-top: 60px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .card-container {
+        flex-direction: row;
+        margin: 35px auto;
+    }
+
+    .card {
+        height: 480px;
+    }
+
+    footer {
+        bottom: 0;
+    }
+}
+
+@media (min-height: 1200px) {
+    footer {
+        position: fixed;
+    }
 }
