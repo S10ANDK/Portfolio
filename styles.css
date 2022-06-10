@@ -71,14 +71,6 @@ h1 {
     transition: 0.4s ease;
 }
 
-.card:hover {
-    background-color: #F5EFE9;
-}
-
-.card-link:hover {
-    cursor: pointer;
-}
-
 .card_images {
    width: 100%;
    max-width: 250px; 
@@ -158,10 +150,6 @@ footer {
     margin-right: 10px;
 }
 
-.footer-link:hover {
-
-}
-
 @media (min-width: 400px) {
     .card {
     max-width: 300px;
@@ -205,6 +193,14 @@ footer {
 
     .card {
         height: 480px;
+    }
+
+    .card:hover {
+        background-color: #F5EFE9;
+    }
+    
+    .card-link:hover {
+        cursor: pointer;
     }
 
     footer {
