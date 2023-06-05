@@ -40,34 +40,35 @@ footer {
 main {
     max-width: 1400px;
     background-color: #8FA8A0;
+    padding-bottom: 60px;
     margin: auto;
 }
 
 h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5rem;
-    font-weight: 00;
+    font-weight: 600;
     max-width: 320px;
     color: #000000;
-    background-color: #DCE2F5;
     padding: 10px;
     margin: 40px auto 0px;
 }
 
 .card-container {
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
+    display: grid;
+    gap: 40px;
+    margin: 40px auto;
 }
 
 .card {
-    flex: 1;
     background-color: #F5F5F5;
     width: 100%;
     max-width: 280px;
     height: 460px;
     padding: 50px 20px 60px;
-    border-radius: 5px;
-    margin: 20px auto;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
     transition: 0.4s ease;
 }
 
@@ -160,6 +161,20 @@ footer {
    }
 }
 
+@media (min-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+    max-width: 300px;
+   } 
+
+   a {
+    margin-left: 25px;
+   }
+}
+
 @media (min-width: 1200px) {
     header {
         height: 200px;
@@ -173,10 +188,6 @@ footer {
         font-size: 1.8rem;
     }
 
-    main{
-        padding-bottom: 20vh;
-    } 
-
     h1 {
         font-size: 1.9rem;
         margin-top: 60px;
@@ -187,8 +198,9 @@ footer {
     }
 
     .card-container {
-        flex-direction: row;
-        margin: 35px auto;
+        margin: 60px auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 60px;
     }
 
     .card {
@@ -205,11 +217,5 @@ footer {
 
     footer {
         bottom: 0;
-    }
-}
-
-@media (min-height: 1200px) {
-    footer {
-        position: fixed;
     }
 }
